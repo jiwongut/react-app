@@ -3,6 +3,7 @@ import myheader from './header';
 import myfooter from './footer';
 import Counter from './counter';
 import OddEven from './oddeven';
+import Container from './container';
 
 function App() {
   let name = "jiwon";
@@ -19,13 +20,14 @@ function App() {
     },
   };
 
-  const num = 3;
+//const num = 3;
 
   return (
-    <div style= {style.App}>
-      <myheader/>
-    <Counter initialValue = {5}></Counter>
-    </div>
+    <Container>
+      <div style= {style.App}>
+        <Counter></Counter>
+      </div>
+    </Container>
   );
 }
 // module exports 와 같은 기능, 하나만 내보낼 수 있음.
